@@ -31,9 +31,9 @@
         <div class="card">
             <img src="https://img.nbc.com/sites/nbcunbc/files/files/images/2013/11/08/2013_0821_Parks_and_Recreation_640x320_Mdot.jpg" onclick="shuffle('parks')">
         </div>
-<!--         <div class="card">
+        <div class="card">
             <img src="https://static.next-episode.net/tv-shows-images/huge/new-girl.jpg" onclick="shuffle('newgirl')">
-        </div> -->
+        </div>
 
 
 <script>
