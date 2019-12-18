@@ -1,0 +1,62 @@
+img {
+	width: 400px;
+  max-width: 80%;
+	height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px!;
+  display: block;
+}
+
+button {
+  background-color: #4286f4; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  button {
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+}
+
+h1 {
+	text-align: center;
+  font-size: 70px;
+  margin-top: 0px;
+}
+
+body {
+  background-color: grey;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 red;
+  transition: 0.3s;
+  padding: 10px;
+  margin-bottom: 4%;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 black;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
