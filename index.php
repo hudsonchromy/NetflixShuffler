@@ -10,6 +10,15 @@
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>  
         <script src="jquery.gradientify.min.js"></script>
         <link rel="stylesheet" href="style.css"/>  
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139847415-3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-139847415-3');
+        </script>
 
 
     </head>
@@ -21,6 +30,9 @@
         </div>
         <div class="card">
             <img src="https://img.nbc.com/sites/nbcunbc/files/files/images/2013/11/08/2013_0821_Parks_and_Recreation_640x320_Mdot.jpg" onclick="shuffle('parks')">
+        </div>
+        <div class="card">
+            <img src="https://static.next-episode.net/tv-shows-images/huge/new-girl.jpg" onclick="shuffle('new')">
         </div>
 
 
