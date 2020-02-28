@@ -41,20 +41,7 @@
         <div class="card">
             <img src="https://images.squarespace-cdn.com/content/v1/54f74f23e4b0952b4e0011c0/1475031386906-I20GE2FEZKC3IQ6EXJAS/ke17ZwdGBToddI8pDm48kGwqNa-TSATgABi909OK27Z7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQSxQa_pE67Ig1CszvlZo11NCLvqIlshiNC_JCcjnOmqOV4zqrbdg_2AqIEjj1Z3Fg/image-asset.jpeg" onclick="shuffle('greys')">
         </div>
-<div class="container">
-    <ul>
-  <li><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button></li>
-  <li>
-  <div id="demo" class="collapse">
-    <input type="checkbox" name="office" value="Bike"> The Office<br>
-    <input type="checkbox" name="parks" value="Bike"> Parks and Rec<br>
-    <input type="checkbox" name="newgirl" value="Bike"> New Girl<br>
-    <input type="checkbox" name="friends" value="Bike"> Friends<br>
-    <input type="checkbox" name="greys" value="Bike"> Greys Anatomy<br>
-  </div>
-</li>
-</ul>
-</div>
+
 
 
 <script>
