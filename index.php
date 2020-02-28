@@ -8,6 +8,8 @@
         <title>Netflix Shuffler</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="jquery.gradientify.min.js"></script>
         <link rel="stylesheet" href="style.css"/>  
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,6 +21,7 @@
 
           gtag('config', 'UA-139847415-3');
         </script>
+
 
 
     </head>
@@ -34,30 +37,32 @@
         <div class="card">
             <img src="https://static.next-episode.net/tv-shows-images/huge/new-girl.jpg" onclick="shuffle('newgirl')">
         </div>
-        <div class="card">
-            <img src="https://www.rollingstone.com/wp-content/uploads/2019/09/FriendsLead.jpg?resize=900,600&w=450" onclick="shuffle('friends')">
-        </div>
+
         <div class="card">
             <img src="https://images.squarespace-cdn.com/content/v1/54f74f23e4b0952b4e0011c0/1475031386906-I20GE2FEZKC3IQ6EXJAS/ke17ZwdGBToddI8pDm48kGwqNa-TSATgABi909OK27Z7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQSxQa_pE67Ig1CszvlZo11NCLvqIlshiNC_JCcjnOmqOV4zqrbdg_2AqIEjj1Z3Fg/image-asset.jpeg" onclick="shuffle('greys')">
         </div>
+<div class="container">
+    <ul>
+  <li><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button></li>
+  <li>
+  <div id="demo" class="collapse">
+    <input type="checkbox" name="office" value="Bike"> The Office<br>
+    <input type="checkbox" name="parks" value="Bike"> Parks and Rec<br>
+    <input type="checkbox" name="newgirl" value="Bike"> New Girl<br>
+    <input type="checkbox" name="friends" value="Bike"> Friends<br>
+    <input type="checkbox" name="greys" value="Bike"> Greys Anatomy<br>
+  </div>
+</li>
+</ul>
+</div>
 
 
 <script>
         var grey1 = [220, 220, 220];
         var grey2 = [105, 105, 105];
-        var office1 = [93, 188, 210];
-        var office2 = [170, 229, 252];
 
         var sc = grey1;
         var ec = grey2;
-
-        function coloroffice() {
-            console.log("here");
-            sc = office1;
-            ec = office2;
-        }
-
-        
 
         $('body').gradientify({
                 gradients: [
@@ -66,12 +71,6 @@
                 ]
             });
 
-        $('card').gradientify({
-                gradients: [
-                    { start: office1, stop: office2 },
-                    { start: office2, stop: office1 }
-                ]
-            });
 
 
 
@@ -84,5 +83,28 @@
                 window.open('https://www.netflix.com/watch/' + chosen, '_blank');
             }
         </script>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                console.log("here");
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+
     </body>
 </html>
